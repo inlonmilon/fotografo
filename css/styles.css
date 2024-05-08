@@ -56,11 +56,11 @@ header h2::after, header h2::before{
 }
 
 header h2::after{
-    left: 1rem;
+    right: 0;
 }
 
 header h2::before{
-    right: 1rem;
+    left: 0;
 }
 
 #herosection{
@@ -144,24 +144,21 @@ h3{
 }
 
 #prudence{
-    font-size: 1.25rem;
-    margin-top: .8rem;
-    text-align: end;
-    position: relative;
     font-weight: 400;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    justify-content: end;
+
 }
 
-#prudence::after{
+#prudence::before{
     display: block;
-    position: absolute;
     content: "";
     background-color: currentColor;
-    width: 15%;
     height: 1px;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 9.5rem;
-
+    width: 15%;
 }
 
 
@@ -346,7 +343,7 @@ footer{
 
 
     #feedback{
-        padding: 18rem 12rem;
+        padding: 18rem 11rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -359,22 +356,11 @@ footer{
     }
 
     #prudence{
-        margin-top: .3rem;
-        font-weight: 400;
         font-size: 1.5rem;
-        justify-content: end;
-        display: flex;
-        align-items: center;
-        gap: .3rem;
-        margin-top: .3rem;
     }
 
     #prudence::before{
-        display: block;
-        content: "";
-        background-color: currentColor;
-        height: 1px;
-        width: 8%;
+        width: 9%;
     }
 
     #grid{
